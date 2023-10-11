@@ -1,5 +1,6 @@
 package br.com.petz.clientepet.cliente.domain;
 
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.validation.constraints.Email;
@@ -8,6 +9,7 @@ import jakarta.validation.constraints.NotNull;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.UuidGenerator;
 import org.hibernate.validator.constraints.UUID;
 import org.hibernate.validator.constraints.br.CPF;
 

@@ -8,7 +8,6 @@ import jakarta.validation.constraints.NotNull;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import org.hibernate.annotations.UuidGenerator;
 import org.hibernate.validator.constraints.UUID;
 import org.hibernate.validator.constraints.br.CPF;
 
@@ -22,7 +21,7 @@ public class Cliente {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id", updatable = false, unique = true, nullable = false)
-    private UUID idCliente;
+    private long idCliente;
     @NotBlank
     private String nomeCompleto;
     @NotBlank

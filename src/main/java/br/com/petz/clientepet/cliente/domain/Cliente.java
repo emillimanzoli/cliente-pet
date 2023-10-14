@@ -22,7 +22,7 @@ public class Cliente {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id", updatable = false, unique = true, nullable = false)
-    private long idCliente;
+    private Long idCliente;
     @NotBlank
     private String nomeCompleto;
     @NotBlank

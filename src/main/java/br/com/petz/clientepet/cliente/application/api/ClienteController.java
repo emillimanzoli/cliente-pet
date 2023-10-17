@@ -29,4 +29,12 @@ public class ClienteController implements ClienteAPI {
         log.info("[finaliza] ClienteController - getTodosClientes");
         return clientes;
     }
+
+    @Override
+    public ClienteDetalhadoResponse getClientesAtravesId(Long idCliente) {
+        log.info("[inicia] ClienteController - getClienteAtravesId");
+        log.info("[idCliente] {}", idCliente);
+        log.info("[finaliza] ClienteController - getClienteAtravesId");
+        return null;
+    }
 }
